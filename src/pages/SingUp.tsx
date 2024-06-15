@@ -180,6 +180,7 @@ const UserForm: React.FC = () => {
             )}
           </ul>
           <button onClick={handleAccept}>Aceptar</button>
+          <p>vamos a iniciar por aqui</p>
         </div>
       )}
     </div>
