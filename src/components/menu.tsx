@@ -1,7 +1,7 @@
 import "../styles/menu.css";
 import BannerPrincipal from '../recursos/banner.png';
 import logo2 from '../recursos/logoN.jpg';
-
+import { Link } from "react-router-dom";
 
 
 
@@ -43,7 +43,7 @@ function MenuSuperior() {
                     <li className="botton-list"><a href="/tendencias">Tendencias</a></li>
                     <li className="botton-list"><a href="/Promociones">Promociones</a></li>
                     <li className="botton-list"> <a href="/about">nosotros</a> </li>
-                    <li className="botton-list"><a href="/shoping">Carrito</a></li>
+                    <li className="botton-list"><Link to="/Login">Login</Link></li>
             </ul>
             
         </nav>
