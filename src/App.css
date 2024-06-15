@@ -1,0 +1,29 @@
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    list-style-type: none;
+    min-width: 340px;
+    /* color de tema blanco o oscuro para trabajar despues */
+    background-color: rgb(255, 255, 255);
+}
+
+A:link {text-decoration: none }
+A:hover { color: black;}
+A:visited {color: black; }
+
+a {
+    text-decoration: none; /* Quitar subrayado */
+    color: black; /* Cambiar el color del texto de los enlaces */
+  }
+
+  h1{
+    font-size: 20vw;
+  }
+	

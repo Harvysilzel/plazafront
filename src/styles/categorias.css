@@ -1,0 +1,55 @@
+.BtnCat{
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px;
+    text-align: justify;
+    list-style: none;
+    transition: transform 0.3s;
+    
+
+}
+
+
+.BtnCat:hover{
+    list-style: none;
+    background-color: rgb(229, 185, 83);
+    cursor: pointer;
+    transform: scale(1.2) translateX(12px);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+
+.Btnminipro{
+    display: flex;
+   
+    margin: 5%;
+    flex-wrap: wrap;
+    background-color: rgb(128, 183, 165);
+}
+
+
+
+.miniproduct{
+    display: flex;
+    
+   
+}
+
+.cajaimgmini{
+    
+    width: calc(30%);
+}
+
+.Imgmini{
+    width: calc(100%);
+}
+
+.descripminiproduc{
+    
+    width: calc(70%);
+    
+}

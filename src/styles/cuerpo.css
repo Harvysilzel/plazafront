@@ -1,0 +1,180 @@
+.inicio{
+    
+    list-style: none;
+    
+    
+    }
+.cuerpo{
+background-color: rgba(166, 224, 30, 0.362);
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+
+}
+.Centro{
+    background-color: beige;
+    margin: 1%;
+    min-width: 60%;
+    flex-basis: 0rem;
+    flex-grow: 999;
+    text-align: center;
+}
+.LatIzq{
+    background-color: rgb(255, 127, 0);
+    margin: 1%;
+    max-width: 350px;
+    text-align: center;
+    flex-basis: 12.5rem;
+    flex-grow: 1;
+}
+.LatDer{
+    background-color: rgb(170, 170, 230);
+    margin: 1%;
+    flex-basis: 12.5rem;
+    flex-grow: 1;
+    max-width: 350px;
+    text-align: center;
+}
+.ProducEstilo{
+    list-style: none;
+    background-color: rgb(179, 190, 138);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 5;
+}
+
+.estilotitulo{
+   
+    -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+   
+}
+
+.descripcionproducto{
+    max-height: 3.6em; /* Dos líneas de texto (1.8em por línea) más un poco de espacio para los puntos suspensivos */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.stiloul{
+   
+    display: flex;
+    width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(8, 205, 205, 0.343);
+    
+}
+
+
+
+
+.stiloli{
+    min-width: 150px;
+    list-style: none;
+    background-color:rgba(255, 255, 255, 0.731);
+        width: calc(30%);
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  
+ 
+    
+}
+
+
+
+
+
+.ImagenProducto{
+    width: calc(90%);
+    margin: 7px;
+    border-radius: 20px;
+}
+
+
+
+.caruselNvo{
+    display: flex;
+    
+    margin: 2%;
+}
+
+.nohaynada{
+    text-align: center;
+    margin: 5%;
+}
+
+.carrovoid{
+    width: calc(30%);
+
+}
+
+
+.nomproducrdw{
+    margin-top: -5px;
+   font-size: 2vw;
+    
+}
+
+.preciostile{
+    margin: 10px;
+}
+
+.uvicadobtn{
+    display: flex;
+    text-align: center;
+    
+}
+
+.cerrarcat{
+    display: none;
+}
+
+.abrir-categoria{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+   
+   
+   .cerrarcat,
+   .abrir-categoria{
+    display: block;
+   }
+   
+   
+   
+    .LatIzq{
+        opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .LatIzq.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .BtnCat a{
+        color: white;
+    }
+
+
+}

@@ -1,0 +1,31 @@
+
+/* src/carousel.css */
+.carousel-container {
+    width: 100%; /* Establece el ancho deseado para el contenedor */
+    overflow: hidden; /* Para ocultar cualquier desbordamiento de imágenes */
+    position: relative; /* Asegura que las imágenes se posicionen relativas al contenedor */
+    height: auto; /* Establece la altura deseada para el carrusel */
+    max-width: 1050px;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Agrega una transición suave para el cambio de imágenes */
+  }
+  
+  .carousel img {
+    width: 100%; /* Las imágenes ocupan todo el ancho del contenedor */
+    height: auto;
+  }
+  
+  /* Resto de tus estilos aquí */
+  
+  
+  .carousel img.active {
+    opacity: 1;
+  }
+  
+  .carousel img.hidden {
+    opacity: 0;
+  }
+  

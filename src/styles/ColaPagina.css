@@ -1,0 +1,31 @@
+.vidFooter{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sections{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    
+    width: calc(18%);
+    margin-bottom: 40px;
+    
+}
+.sections a{
+    color: white;
+}
+
+.sectionscentro{
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    
+    width: calc(60%);
+}
+
+.sectionscentro a{
+    color: white;
+}

@@ -1,0 +1,17 @@
+.pordefecto{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-color: rgb(255, 255, 255);
+}
+
+.pagError{
+    width: calc(40%);
+    margin: 20px
+}
+
+.logoerror{
+    width: calc(60%);
+}

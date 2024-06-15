@@ -1,0 +1,150 @@
+.contenedorProducto{
+    background-color: aqua;
+    display: flex;
+}
+
+.DtaProduc{
+    background-color: rgb(107, 150, 187);
+    margin: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.DtaGaleryprod{
+    
+    margin: 5px;
+    width: calc(30%);
+    justify-content: space-around;
+}
+
+.TxtProd{
+    
+    margin: 5px;
+    width: calc(40%);
+}
+
+.EnvProd{
+    background-color: brown;
+    margin: 5px;
+    width: calc(20%);
+}
+
+.ImagProducdta{
+    width: calc(100%);
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.infProd{
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contPrice{
+    display: flex;
+    align-items: baseline;
+}
+
+.infPriceProd{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: chartreuse;
+}
+
+.infdescProd{
+    font-size: 20px;
+    margin-left: 15px;
+    color: red;
+    -webkit-text-stroke: 1px #000;
+    text-decoration: line-through red;
+}
+
+.cantdesc{
+    font-size: 15px;
+    margin-left: 10px;
+    color: blue;
+}
+
+.red-text {
+    color: red;
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+  .SugerenciasShop{
+    background-color: rgb(214, 68, 68);
+    display: flex;
+  }
+
+  .EstaTienda{
+    
+    width: calc(25%);
+    height: 200px;
+    background-color: rgb(255, 187, 0);
+    margin: 10px;
+    
+   
+  }
+
+  .tienda{
+    width: calc(100%);
+    background-color: rgb(102, 224, 100);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .nda{
+    margin: 2%;
+    background-color: rgb(120, 120, 120);
+    width: 150px;
+    height: 150px;
+  }
+
+.descripTiendaVir{
+    text-align: center;
+    background-color: rgb(219, 100, 187);
+    margin: 2%;
+    width: 100%;
+    
+}
+
+  .SugProducTxT{
+    width: calc(80%);
+    height: 200px;
+    background-color: rgb(43, 113, 24);
+    margin: 10px;
+    display: flex;
+    text-align: center;
+  }
+
+  .CajaProducMini{
+    width: calc(18%);
+    height: calc(90%);
+    
+    background-color: rgb(183, 245, 255);
+   border-radius: 10px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  .sugGaleryprod{
+    width: calc(50%);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .ImagProducdtammini{
+    width: 100%;
+  }
