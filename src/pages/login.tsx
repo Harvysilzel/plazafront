@@ -2,7 +2,7 @@ import logo from '../recursos/logoN.jpg'
 
 import React from 'react';
 
-const Login: React.FC = () => {
+const Logins: React.FC = () => {
     return (
         <div className='pordefecto'>
           <div className='pagError'><h1>iniciar Sesion</h1></div>
@@ -14,4 +14,4 @@ const Login: React.FC = () => {
       );
 };
 
-export default Login;
+export default Logins;
