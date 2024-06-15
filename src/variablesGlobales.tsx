@@ -1,5 +1,5 @@
 
 
-export const serverApi = "https://bp0lnplm-3000.use2.devtunnels.ms";
+export const serverApi = "http://localhost:3000";
 
-export const serverFront = "https://front-store-ax9nxg9hr-harvysilzels-projects.vercel.app";
+export const serverFront = "https://plazafront.vercel.app";
