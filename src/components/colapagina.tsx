@@ -24,7 +24,7 @@ function Colapag (){
         <section className='sections'>
           <div>
             <p>quieres ofrecer tus productos </p>
-            <p>unete a esta red de emprendedores</p>
+            <p>unete a esta red</p>
             <a href="/SingUp">AQUI</a>
             </div>
             </section>
