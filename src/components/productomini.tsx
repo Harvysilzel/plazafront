@@ -44,7 +44,7 @@ export const CateShowMini: React.FC<CateShowProps> = ({ }) => {
                 {item.filename ? (
                 <img
                   className="Imgmini"
-                  src={`${serverFront}/src/recursos/productos/${item.filename}`}
+                  src={`${serverFront}/recursos/productos/${item.filename}`}
                   alt="imagen"
                   onError={(e) => {
                     console.error("Error al cargar la imagen:", e);
