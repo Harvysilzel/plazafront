@@ -43,7 +43,7 @@ export const ProductShow = ({ selectedCategory }: { selectedCategory: number | n
             {product.filename ? (
               <img
                 className="ImgVacia"
-                src={`public/recursos/productos/${product.filename}`}
+                src={`/recursos/productos/${product.filename}`}
                 alt={product.name}
                 onError={(e) => {
                   console.error("Error al cargar la imagen:", e);

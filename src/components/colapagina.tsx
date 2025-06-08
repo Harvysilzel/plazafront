@@ -7,11 +7,11 @@ function Colapag (){
   return(
     <>
     <footer className="vidFooter">
-        <section className='sections'><div><p>1</p></div></section>
+        <section className='sections'><div><p>ten algo de paciencia aun estamos en construccion</p></div></section>
         <section className='sectionscentro'>
           <div>
-            <h3>todos los derechos reservados guardabarranco developers</h3>
-            <h4>SZeledón Dev & GROporta Dev </h4>
+            <h3>todos los derechos reservados NG developers</h3>
+            <h4>ZilvasDevelopers</h4>
             <hr />
             <a href="/TerminosYCondiciones">
               <p>lee nuestros terminos y condiciones</p>
