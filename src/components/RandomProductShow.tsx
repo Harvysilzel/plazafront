@@ -30,7 +30,7 @@ function RandomProductShow({ products }: RandomProductShowProps) {
                 {product.filename ? (
                   <img
                     className="ImagenProducto"
-                    src={`./src/recursos/productos/${product.filename}`}
+                    src={`/recursos/productos/${product.filename}`}
                     alt="imagen"
                     onError={(e) => {
                       console.error("Error al cargar la imagen:", e);
