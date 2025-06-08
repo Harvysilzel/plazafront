@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import '../styles/cuerpo.css';
 import { serverApi } from "../variablesGlobales";
 
@@ -40,17 +40,22 @@ export const ProductShow = ({ selectedCategory }: { selectedCategory: number | n
       <ul className="stiloul">
         {products.map((product) => (
           <li className="stiloli" key={product.id}>
-           {product.filename ? (
+            {product.filename ? (
               <img
                 className="ImgVacia"
-                src={`../recursos/productos/${product.filename}`}
-                alt="imagen"
+                src={`/recursos/productos/${product.filename}`}
+                alt={product.name}
                 onError={(e) => {
                   console.error("Error al cargar la imagen:", e);
+                  (e.target as HTMLImageElement).src = `/recursos/productos/logoN.jpg`;
                 }}
               />
             ) : (
-              <img className="ImgVacia" src={`../recursos/productos/logoN.jpg`} alt="imagen vacía" />
+              <img
+                className="ImgVacia"
+                src={`/recursos/productos/logoN.jpg`}
+                alt="imagen vacía"
+              />
             )}
             <h1 className="stilotitulo">{product.name}</h1>
             <div className="descripcionproducto lineacamp">
