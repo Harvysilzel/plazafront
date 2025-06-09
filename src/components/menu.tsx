@@ -4,6 +4,7 @@ import logo2 from '../recursos/logoN.jpg';
 import { useEffect, useState } from 'react';
 import { FaSearch, FaHeart, FaShoppingCart, FaUser, FaMapMarkerAlt } from 'react-icons/fa';
 import axios from 'axios';
+import { serverApi } from "../variablesGlobales";
 
 interface Usuario {
   name: string;
@@ -35,12 +36,12 @@ function MenuSuperior() {
     };
   }, []);
 
-  const handleLogin = async () => {
-    try {
-      const response = await axios.post('http://localhost:3000/users/login', {
-        email,
-        password,
-      });
+const handleLogin = async () => {
+  try {
+    const response = await axios.post(`${serverApi}/users/login`, {
+      email,
+      password,
+    });
 
       const { user } = response.data;
       setUsuario(user);
