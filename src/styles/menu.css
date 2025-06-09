@@ -1,116 +1,167 @@
-.cabesera{
-    background-color: rgba(144, 197, 197, 0.479);
+.cabesera {
+  background-color: rgba(144, 197, 197, 0.479);
 }
 
-.bannerlargo{
-    background-color: black;
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #cce7e7;
+  font-family: sans-serif;
 }
 
-.BannerStilo{
-    width: 100%;
+.barra-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.portadas{
-    background-color: #e6d9d978;
-    display: flex;
-   
-    
-    
+.input-busqueda {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.logo{
-    background-color: rgba(250, 235, 215, 0.476);
-    min-width: 50px;
-    width: 10%;
+.barra-derecha {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
-.logoEmp{
-    width: calc(100%)
+.icono {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.menuPrincipal{
-    background-color: rgb(144, 174, 164);
-    width: 86%;
-    
-    
+.icono-contenedor {
+  position: relative;
 }
 
-
-
-.minibanner{
-    width: 40%;
-    background-color: bisque;
+.submenu {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  min-width: 200px;
 }
 
-.banner2{
-    width: 100px;
+.submenu.login input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-.Bus{
-    background-color: beige;
-    width: 70%;
+.boton-login {
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #79a8a9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
-
-.headermenu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e9a9a9;
-    padding: 0rem 2rem 0rem 0rem;
-    font-family: sans-serif;
-    flex-direction: row-reverse;
- 
+.submenu.login a {
+  display: block;
+  text-align: center;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #007bff;
 }
 
-
-
-.nav-list{
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-    justify-items: center;
-   
-    
+.submenu.login a:hover {
+  text-decoration: underline;
 }
 
-.botton-list{
-    text-decoration: none;
-  
-    margin: 10px;
-    
+.bannerlargo {
+  background-color: black;
 }
 
-.abrir-menu{
-    display: none;
+.BannerStilo {
+  width: 100%;
 }
 
-.cerrar{
-    display: none;
+.portadas {
+  background-color: #e6d9d978;
+  display: flex;
 }
 
-.nav{
-    display: flex;
+.logo {
+  background-color: rgba(250, 235, 215, 0.476);
+  min-width: 50px;
+  width: 10%;
 }
 
+.logoEmp {
+  width: calc(100%);
+}
 
+.menuPrincipal {
+  background-color: rgb(144, 174, 164);
+  width: 86%;
+}
 
-@media screen and (max-width:500px){
-    
-    .abrir-menu,
-    .cerrar{
-        display:block;
-    }
+.headermenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e9a9a9;
+  padding: 0rem 2rem 0rem 0rem;
+  font-family: sans-serif;
+  flex-direction: row-reverse;
+}
 
-    .abrir-menu{
-        margin-right: -30px;
-        background-color: rgb(73, 72, 72);
-        color: #e9a9a9;
-    }
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  justify-items: center;
+}
 
- 
-   
-   .nav{
+.botton-list {
+  text-decoration: none;
+  margin: 10px;
+}
+
+.abrir-menu {
+  display: none;
+}
+
+.cerrar {
+  display: none;
+}
+
+.nav {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .abrir-menu,
+  .cerrar {
+    display: block;
+  }
+
+  .abrir-menu {
+    margin-right: -30px;
+    background-color: rgb(73, 72, 72);
+    color: #e9a9a9;
+  }
+
+  .nav {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -124,20 +175,36 @@
     background-color: rgb(0, 0, 0);
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
+  }
 
-    .nav.visible{
-        opacity: 1;
-        visibility: visible;
-        position: fixed;
-    }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+  }
 
-    .nav-list{
-        flex-direction: column;
-        align-items: end;
-    }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
 
-    .botton-list a{
-        color: #ecececec;
-    }
+  .botton-list a {
+    color: #ecececec;
+  }
+
+  .barra-superior {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .barra-derecha {
+    justify-content: space-between;
+  }
+
+  .submenu {
+    position: static;
+    box-shadow: none;
+    margin-top: 0.5rem;
+  }
 }
