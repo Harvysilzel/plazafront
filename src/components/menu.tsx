@@ -1,5 +1,5 @@
 import "../styles/menu.css";
-import BannerPrincipal from '../recursos/banner.png';
+
 import logo2 from '../recursos/logoN.jpg';
 import { useEffect, useState } from 'react';
 import { FaSearch, FaHeart, FaShoppingCart, FaUser, FaMapMarkerAlt } from 'react-icons/fa';
@@ -106,11 +106,7 @@ const handleLogin = async () => {
           </div>
         </div>
 
-        <div className="bannerlargo">
-          <img className="BannerStilo" src={BannerPrincipal} alt="imagen vacia" />
-        </div>
-
-        <div className="portadas">
+                <div className="portadas">
           <section className="logo">
             <p><a href="/"><img className="logoEmp" src={logo2} alt="logo empresa" /></a></p>
           </section>
