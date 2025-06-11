@@ -1,0 +1,286 @@
+:root {
+  --color-guardabarranco: #4CAF50;
+  --color-secundario: #FFC107;
+  --color-fondo: #f4fdf7;
+  --color-texto: #2f2f2f;
+  --color-acento: #81C784;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+  color: var(--color-texto);
+}
+
+/* SECCIÓN TIENDA - Portada amplia */
+.secProveedor {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 2rem;
+  box-shadow: inset 0 -100px 80px rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: left;
+}
+
+.imagenproveedor {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: -12rem;
+}
+
+.imagenproveedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.datosProveedor {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.datosProveedor p,
+.detalletienda p {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000, -1px -1px 2px #000;
+  margin: 0.3rem 0;
+}
+
+.detalletienda {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 10px;
+  color: #f5f5f5;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* SECCIÓN AUTOR */
+.secAutor {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.imgPropietario {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--color-guardabarranco);
+}
+
+.imgPropietario img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* COLLAGE DE PRODUCTOS */
+.producProveedor {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.producProveedor h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-guardabarranco);
+  border-left: 8px solid var(--color-secundario);
+  padding-left: 15px;
+  background-color: #a3daa8;
+  border-radius: 6px;
+}
+
+/* Aquí el grid que define columnas y separación */
+.collageProductos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Mínimo 2 columnas en móvil */
+  gap: 1rem;
+}
+
+/* Más columnas en pantallas mayores */
+@media (min-width: 600px) {
+  .collageProductos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .collageProductos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* TARJETA DE PRODUCTO */
+.contenedorProducto {
+  background-color: #071961;
+  border: 1px solid #e0e0e0;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  flex-direction: column;
+  background: linear-gradient(to bottom, #a8f790, #99b1f3);
+  position: relative;
+  width: 100%; /* Ocupa todo el ancho de la celda */
+}
+
+.ImagProducdta {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Cuadrado */
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.ImagProducdta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.contenedorProducto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.DtaGaleryprod {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.DtaGaleryprod img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.TxtProd {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.TxtProd h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.TxtProd p {
+  font-size: 0.92rem;
+  color: #555;
+}
+
+/* PRECIO NORMAL Y CON DESCUENTO */
+.contPrice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.precioDescuento {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-guardabarranco);
+}
+
+.precioTachado {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+.descCaja {
+  background-color: #D32F2F;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  border-radius: 5px;
+}
+
+/* CALIFICACIÓN Y BOTÓN DE CARRITO */
+.calificacionYCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 1rem;
+}
+
+.btnCarrito {
+  background-color: var(--color-guardabarranco);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btnCarrito:hover {
+  background-color: #388E3C;
+}
+
+/* RESPONSIVE */
+/* En móvil ya tienes 2 columnas por defecto, esta regla es para evitar conflictos */
+@media screen and (max-width: 768px) {
+  .contenedorProducto {
+    width: 100%;
+  }
+
+  .secAutor {
+    width: 90%;
+  }
+
+  .secProveedor {
+    height: 200px;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .datosProveedor {
+    font-size: 1.6rem;
+  }
+
+  .detalletienda {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+}
