@@ -145,11 +145,11 @@ body {
   position: relative;
   width: 100%; /* Ocupa todo el ancho de la celda */
   max-width: 18%;
-  min-width: 100pt;
+  min-width: 120pt;
 }
 
 .ImagProducdta {
-  width: 100%;
+  width: 90%;
   aspect-ratio: 1 / 1; /* Cuadrado */
   overflow: hidden;
   border-radius: 12px;
