@@ -144,6 +144,7 @@ body {
   background: linear-gradient(to bottom, #a8f790, #99b1f3);
   position: relative;
   width: 100%; /* Ocupa todo el ancho de la celda */
+  max-width: 250px;
 }
 
 .ImagProducdta {
