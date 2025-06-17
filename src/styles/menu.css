@@ -1,4 +1,4 @@
-.cabesera {
+.cabecera {
   background-color: rgba(144, 197, 197, 0.479);
 }
 
@@ -9,6 +9,7 @@
   padding: 0.5rem 1rem;
   background-color: #cce7e7;
   font-family: sans-serif;
+  flex-wrap: wrap;
 }
 
 .barra-izquierda {
@@ -28,6 +29,7 @@
   align-items: center;
   gap: 1rem;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .icono {
@@ -98,6 +100,7 @@
 .portadas {
   background-color: #e6d9d978;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -107,7 +110,7 @@
 }
 
 .logoEmp {
-  width: calc(100%);
+  width: 100%;
 }
 
 .menuPrincipal {
@@ -123,6 +126,7 @@
   padding: 0rem 2rem 0rem 0rem;
   font-family: sans-serif;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 .nav-list {
@@ -130,26 +134,25 @@
   display: flex;
   gap: 1rem;
   justify-items: center;
+  flex-wrap: wrap;
 }
 
-.botton-list {
+.button-list {
   text-decoration: none;
   margin: 10px;
 }
 
-.abrir-menu {
-  display: none;
-}
-
+.abrir-menu,
 .cerrar {
   display: none;
 }
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .abrir-menu,
   .cerrar {
     display: block;
@@ -188,7 +191,7 @@
     align-items: end;
   }
 
-  .botton-list a {
+  .button-list a {
     color: #ecececec;
   }
 
@@ -207,4 +210,47 @@
     box-shadow: none;
     margin-top: 0.5rem;
   }
+
+  .portadas,
+  .headermenu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo,
+  .menuPrincipal {
+    width: 100%;
+  }
+}
+
+/* Estilos para cajas de productos y texto responsivo */
+.producto {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  background-color: #fefefe;
+}
+
+.producto .descripcion {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Grilla para mostrar múltiples productos */
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
 }
