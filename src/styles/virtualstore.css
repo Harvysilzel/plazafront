@@ -145,7 +145,7 @@ body {
   position: relative;
   width: 100%; /* Ocupa todo el ancho de la celda */
   max-width: 18%;
-  min-width: 120pt;
+  min-width: 130pt;
 }
 
 .ImagProducdta {
